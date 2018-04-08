@@ -1,0 +1,65 @@
+第一个小重点 ：JavaScript中的逻辑与（&&） 和 逻辑或（||）     
+
+		a、逻辑与 && 
+		
+		var result = 3 && 9;
+		
+		console.log(result); //控制台打印输出的结果为 9（想不明白的时候，不妨动手试一试）
+		
+		var result = false && 5;
+		
+		console.log(result); //控制台打印输出的结果为 false
+		
+		总结：
+
+		① 若逻辑与 &&运算符左边的值返回为true，则继续向后执行，返回右边的值。
+
+		② 若逻辑与 &&运算符左边的值返回为false，则不再向后执行，返回输出左边的值。
+		
+			//逻辑与 &&运算符中含有特殊取值参与过程
+			(建议动手试一试，特殊取值)
+			
+			var result = NaN && 6;
+			
+			console.log(result); //控制台打印输出的结果为 NaN
+			
+			var result = null && 2;
+			
+			console.log(result); //控制台打印输出的结果为 null
+			
+			var result = undefined && 8;
+			
+			console.log(result); //控制台打印输出的结果为 undefined
+			
+		
+		
+		b、逻辑或 || 
+		
+		var result = false || 8;
+		
+		console.log(result); //控制台打印输出的结果为 8
+		
+		var result = true || 4;
+		
+		console.log(result); //控制台打印输出的结果为 true
+		
+		总结：
+		
+		若逻辑或 || 运算符左边的值返回false，则继续向后执行，则执行右边的内容。
+		
+		若逻辑或 || 运算符左边的值返回true，则不继续向后执行，返回输出左边的值。
+			
+			//若逻辑或 || 运算符中含有特殊取值参与过程
+			(建议动手试一试，特殊取值)
+			
+			var result = null || null;
+			
+			console.log(result); //控制台打印输出的结果为null
+			
+			var result = NaN || NaN;
+			
+			console.log(result); //控制台打印输出的结果为NaN
+			
+			var result = undefined || undefined;
+			
+			console.log(result); //控制台打印输出的结果为undefined
